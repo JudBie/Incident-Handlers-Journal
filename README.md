@@ -26,23 +26,7 @@ This journal documents my hands-on experience investigating and responding to va
 ![Ransomware Healthcare Attack Part 1](images/entry1-ransomware-part1.png)
 ![Ransomware Healthcare Attack Part 2](images/entry1-ransomware-part2.png)
 
-**Date**: August 6, 2025
-
-**Incident Type**: Ransomware Attack
-
-**Tools Used**: None
-
-**The 5 W's:**
-
-- **Who**: A group of unethical hackers targeting healthcare and transportation businesses
-- **What**: Hackers deployed ransomware through phishing emails. Employees downloaded malicious content, which encrypted all important patient medical files and brought business operations to a halt. A ransom note was left demanding payment for the decryption key.
-- **When**: Tuesday morning at 9:00 AM
-- **Where**: A small U.S. healthcare clinic
-- **Why**: Employees downloaded content from a phishing email, giving hackers access to the company's network. The attackers were financially motivated, demanding ransom payment in exchange for decrypting the files.
-
-**My Analysis**: This incident demonstrated how phishing remains one of the most effective attack vectors. The healthcare sector is particularly vulnerable because patient care depends on immediate access to medical records. When ransomware encrypted these critical files, the clinic had to stop operations entirely, putting patients at risk. The financial motivation was clear from the ransom note. This entry helped me understand the real-world impact of ransomware attacks and why employee security awareness training is crucial.
-
-**Key Question**: What security measures did the clinic already have in place to prevent or detect this type of attack?
+**My thought process**: This incident showed me how devastating ransomware attacks can be, especially in healthcare where patient care depends on immediate access to medical records. I realized that phishing emails remain one of the most effective attack vectors because they exploit human behavior rather than technical vulnerabilities. The financial motivation was clear from the ransom note, and it made me think about how important employee security awareness training is to prevent these initial infections.
 
 ---
 
@@ -50,25 +34,7 @@ This journal documents my hands-on experience investigating and responding to va
 ![Malicious Spreadsheet Entry Part 1](images/entry2-virustotal-part1.png)
 ![Malicious Spreadsheet Entry Part 2](images/entry2-virustotal-part2.png)
 
-**Date**: August 26, 2025
-
-**Incident Type**: Phishing Email with Malicious Payload
-
-**Tools Used**: VirusTotal - A sandbox environment tool that analyzes files to determine if they are malicious
-
-**The 5 W's:**
-
-- **Who**: A malicious actor who sent a phishing email to an employee
-- **What**: An employee received an email containing a password-protected spreadsheet. After downloading and entering the provided password, a malicious payload was activated on the employee's computer.
-- **When**: Tuesday, August 26, 2025 at 1:11 PM
-- **Where**: At a financial services office
-- **Why**: The employee downloaded and opened the malicious spreadsheet using the password provided in the email
-
-**My Analysis**: This was my first time using VirusTotal, and it was challenging but valuable. The password protection on the spreadsheet was a clever social engineering tactic - it added a sense of legitimacy and required the employee to take an active step (entering the password), which helped bypass some security measures. Using VirusTotal's sandbox environment allowed me to safely analyze the file without risking further infection. This incident taught me how attackers use seemingly legitimate business scenarios (like receiving a document) to deploy malware.
-
-**Key Questions**: 
-- Did the employee recognize any signs that this might be a phishing email?
-- Why was the spreadsheet password protected? (This was likely to evade automated security scans)
+**My thought process**: Using VirusTotal for the first time was challenging but eye-opening. I learned how the password protection on the spreadsheet was a clever social engineering tactic that added legitimacy and helped bypass automated security scans. The sandbox environment let me safely analyze suspicious files, which is a crucial skill for investigating potential malware without risking further infection.
 
 ---
 
@@ -76,28 +42,7 @@ This journal documents my hands-on experience investigating and responding to va
 ![Phishing Investigation Playbook Part 1](images/entry3-playbook-part1.png)
 ![Phishing Investigation Playbook Part 2](images/entry3-playbook-part2.png)
 
-**Date**: August 27, 2025
-
-**Incident Type**: Phishing Email Investigation (Follow-up to Entry 2)
-
-**Tools Used**: Security Playbook - Provided step-by-step guidance with visual flowcharts to determine if the email needed escalation
-
-**The 5 W's:**
-
-- **Who**: A malicious actor who sent an email to an HR employee using the fake name "Clyde West"
-- **What**: The attacker sent an email claiming to be interested in an engineering job posting on the company's website. The email included a password-protected spreadsheet supposedly containing their resume, with the password provided in the email.
-- **When**: Wednesday, July 20, 2022 at approximately 9:30 AM
-- **Where**: HR department at Ingergy offices
-- **Why**: The HR employee believed the malicious file was a legitimate resume from "Clyde West" and opened it using the provided password
-
-**My Analysis**: Using the playbook was extremely helpful for structured investigation. It gave me a clear decision-making framework to follow. Through the playbook process, I identified multiple red flags that confirmed this was a legitimate phishing alert:
-- **Grammatical errors** in the email body
-- **Sender email/name mismatch** - the email address didn't match "Clyde West"
-- **Hash value analysis** confirmed the attached file was malicious
-
-The playbook's visual flowchart was particularly useful when I struggled to understand written instructions. This incident taught me the value of following established procedures during incident response and how to identify phishing indicators systematically.
-
-**Key Insight**: This entry demonstrates how attackers exploit HR processes by impersonating job applicants, taking advantage of HR employees' expectation to receive resumes from unknown individuals.
+**My thought process**: The playbook provided a structured approach that helped me systematically identify red flags - grammatical errors, sender/name mismatches, and malicious hash values. I appreciated how the visual flowchart made decision-making clearer. This incident taught me how attackers exploit HR processes by impersonating job applicants, taking advantage of the fact that HR employees regularly receive resumes from unknown people.
 
 ---
 
@@ -105,28 +50,12 @@ The playbook's visual flowchart was particularly useful when I struggled to unde
 ![PII Theft Forced Browsing Part 1](images/entry4-pii-theft-part1.png)
 ![PII Theft Forced Browsing Part 2](images/entry4-pii-theft-part2.png)
 
-**Date**: August 29, 2025
-
-**Incident Type**: Forced Browsing Attack / Data Breach
-
-**Tools Used**: Final Report - Documentation of the complete incident investigation
-
-**The 5 W's:**
-
-- **Who**: A malicious attacker who gained unauthorized access to customer PII (Personally Identifiable Information)
-- **What**: The attacker exploited a vulnerability on the company's e-commerce webpage using a forced browsing attack to steal customer PII. On December 22, 2022 at 3:13 PM PT, the attacker sent a ransom email demanding $25,000 to keep the data private. The employee dismissed it as spam. Six days later (December 28, 2022 at 7:20 PM PT), the attacker sent a second email with proof of the stolen data and doubled the ransom to $50,000. The employee then reported it to the security team.
-- **When**: The incident was reported on December 28, 2022 at approximately 7:20 PM PT
-- **Where**: The attack occurred through the company's e-commerce webpage. The investigation was conducted at the office after an employee reported it to the security team.
-- **Why**: A vulnerability in the e-commerce webpage allowed the attacker to perform a forced browsing attack. The attacker manipulated the URL (specifically changing order numbers) to access unauthorized customer information.
-
-**My Analysis**: This incident highlighted the serious consequences of web application vulnerabilities. The forced browsing attack technique involved directly manipulating URLs to access resources that should have been restricted. The escalation from $25,000 to $50,000 when the first email was ignored shows how attackers exploit delays in incident response. The employee's initial dismissal of the first email as spam demonstrates why security awareness training is critical - even legitimate threats can initially appear suspicious. This case taught me about web application security weaknesses and the importance of proper access controls and input validation.
-
-**Key Question**: What security controls were already in place that might have helped detect this incident earlier? (Could have prevented the 6-day delay before the threat was taken seriously)
+**My thought process**: This case demonstrated the serious consequences of web application vulnerabilities. I learned about forced browsing attacks where attackers manipulate URLs to access restricted resources. The six-day delay between the first and second ransom emails showed me how dismissing potential threats as spam can escalate situations. It reinforced the importance of timely incident response and proper access controls on web applications.
 
 ---
 
 ## Reflections and Key Takeaways
-![Reflections and Notes](images/reflections-notes.png)
+![Reflections and Notes](images/reflections-notes.png) 
 
 ### 1. Were there any specific activities that were challenging for you? Why or why not?
 
