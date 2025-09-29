@@ -23,10 +23,12 @@ This journal documents my hands-on experience investigating and responding to va
 ## Journal Entries
 
 ### Entry 1: Ransomware Attack on Healthcare Clinic
-![Ransomware Healthcare Attack Part 1](images/entry1-ransomware-part1.png)
-![Ransomware Healthcare Attack Part 2](images/entry1-ransomware-part2.png)
+<img width="605" height="466" alt="Screenshot 2025-09-29 at 4 02 10 PM" src="https://github.com/user-attachments/assets/f585b5ae-f30f-4e86-a2e5-aadf97382b33" />
 
-**My thought process**: This incident showed me how devastating ransomware attacks can be, especially in healthcare where patient care depends on immediate access to medical records. I realized that phishing emails remain one of the most effective attack vectors because they exploit human behavior rather than technical vulnerabilities. The financial motivation was clear from the ransom note, and it made me think about how important employee security awareness training is to prevent these initial infections.
+<img width="601" height="214" alt="Screenshot 2025-09-29 at 4 02 28 PM" src="https://github.com/user-attachments/assets/ad6166a3-b2e1-4b00-96b6-58ec86e071a6" />
+
+
+**My thought process**: This incident showed me how devastating ransomware attacks can be, especially in healthcare where patient care depends on immediate access to medical records. The financial motivation was clear from the ransom note, and it made me think about what the clinic had already put in place to prevent or mitigate an attack like this.
 
 ---
 
@@ -34,7 +36,7 @@ This journal documents my hands-on experience investigating and responding to va
 ![Malicious Spreadsheet Entry Part 1](images/entry2-virustotal-part1.png)
 ![Malicious Spreadsheet Entry Part 2](images/entry2-virustotal-part2.png)
 
-**My thought process**: Using VirusTotal for the first time was challenging but eye-opening. I learned how the password protection on the spreadsheet was a clever social engineering tactic that added legitimacy and helped bypass automated security scans. The sandbox environment let me safely analyze suspicious files, which is a crucial skill for investigating potential malware without risking further infection.
+**My thought process**: Using VirusTotal for the first time was challenging but eye-opening. The sandbox environment let me safely analyze suspicious files, which is a crucial skill for investigating potential malware without risking further infection.
 
 ---
 
@@ -42,7 +44,7 @@ This journal documents my hands-on experience investigating and responding to va
 ![Phishing Investigation Playbook Part 1](images/entry3-playbook-part1.png)
 ![Phishing Investigation Playbook Part 2](images/entry3-playbook-part2.png)
 
-**My thought process**: The playbook provided a structured approach that helped me systematically identify red flags - grammatical errors, sender/name mismatches, and malicious hash values. I appreciated how the visual flowchart made decision-making clearer. This incident taught me how attackers exploit HR processes by impersonating job applicants, taking advantage of the fact that HR employees regularly receive resumes from unknown people.
+**My thought process**: The playbook provided a structured approach that helped me systematically identify red flags - grammatical errors, sender/name mismatches, and malicious hash values. I appreciated how the visual flowchart made decision-making clearer. 
 
 ---
 
@@ -50,24 +52,14 @@ This journal documents my hands-on experience investigating and responding to va
 ![PII Theft Forced Browsing Part 1](images/entry4-pii-theft-part1.png)
 ![PII Theft Forced Browsing Part 2](images/entry4-pii-theft-part2.png)
 
-**My thought process**: This case demonstrated the serious consequences of web application vulnerabilities. I learned about forced browsing attacks where attackers manipulate URLs to access restricted resources. The six-day delay between the first and second ransom emails showed me how dismissing potential threats as spam can escalate situations. It reinforced the importance of timely incident response and proper access controls on web applications.
+**My thought process**: This case demonstrated the serious consequences of web application vulnerabilities. The six-day delay between the first and second ransom emails showed me how dismissing potential threats as spam can escalate situations. It reinforced the importance of timely incident response and proper access controls on web applications.
 
 ---
 
 ## Reflections and Key Takeaways
 ![Reflections and Notes](images/reflections-notes.png) 
 
-### 1. Were there any specific activities that were challenging for you? Why or why not?
-
-Investigating a file using VirusTotal was challenging for me. I had never used VirusTotal before, so learning what to look for and understanding the information it provided took time. However, this challenge helped me develop practical skills in malware analysis and file investigation that are essential for security work.
-
-### 2. Has your understanding of incident detection and response changed since taking this course?
-
-Yes, significantly. I now understand what incident detection and response truly means and the various tools involved. Before taking this course, I thought incident response was primarily about constantly using security tools. However, I learned that much more is involved - particularly the importance of proper documentation. Maintaining an incident handler's journal is a crucial part of incident detection and response. This documentation creates a knowledge base, tracks patterns, and provides valuable information for future investigations.
-
-### 3. Was there a specific tool or concept that you enjoyed the most? Why?
-
-I enjoyed using VirusTotal the most. Despite initially finding it challenging, I came to appreciate how useful this tool can be. I was able to connect theoretical concepts I was learning with practical, real-world analysis. Seeing how the tool works in a sandbox environment and understanding the detection results helped solidify my understanding of malware analysis and threat detection.
+**My thought process**: I reflected on what I had learned and the tools I used, and realized that balancing tools with my own skills is essential to effectively responding to incidents.
 
 ---
 
