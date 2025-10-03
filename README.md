@@ -5,11 +5,11 @@ This journal documents my hands-on experience investigating and responding to va
 
 ## What I Learned
 - How to properly document security incidents using the 5 W's framework for comprehensive incident analysis
-- The critical importance of maintaining an incident handler's journal for tracking patterns and supporting investigations
+- The importance of maintaining an incident handler's journal for tracking patterns and supporting investigations
 - How to use VirusTotal to analyze suspicious files in a sandbox environment and interpret the results
 - How to follow security playbooks to make escalation decisions during incident response
 - How to identify various attack vectors including phishing, ransomware, forced browsing attacks, and social engineering
-- The real-world business impact of different types of security incidents on healthcare, financial services, and retail organizations
+- The real-world business impact of different types of security incidents like on healthcare organizations
 - How to recognize indicators of compromise such as grammatical errors in emails, sender/name mismatches, and suspicious file attachments
 - The importance of timely incident response and the consequences of dismissing potential threats as spam
 - How attackers exploit human psychology through social engineering tactics like fake job applications and password-protected files
@@ -50,14 +50,14 @@ This journal documents my hands-on experience investigating and responding to va
 ![PII Theft Forced Browsing Part 1](images/entry4-pii-theft-part1.png)
 ![PII Theft Forced Browsing Part 2](images/entry4-pii-theft-part2.png)
 
-**My thought process**: This case demonstrated the serious consequences of web application vulnerabilities. The six-day delay between the first and second ransom emails showed me how dismissing potential threats as spam can escalate situations. It reinforced the importance of timely incident response and proper access controls on web applications.
+**My thought process**: This case demonstrated the serious consequences of web application vulnerabilities. The six-day delay between the first and second ransom emails showed me how dismissing potential threats as spam can escalate situations.
 
 ---
 
 ## Reflections and Key Takeaways
 ![Reflections and Notes](images/reflections-notes.png) 
 
-**My thought process**: I reflected on what I had learned and the tools I used, and realized that balancing tools with my own skills is essential to effectively responding to incidents.
+**My thought process**: I reflected on what I had learned and the tools I used, and realized that balancing tools with my own skills is essential to effectively respond to incidents.
 
 ---
 
@@ -71,4 +71,4 @@ Through these four documented incidents, I demonstrated the ability to systemati
 - **Critical Thinking**: Questioning security gaps and analyzing root causes
 - **Business Impact Awareness**: Understanding how security incidents affect different industries
 
-This journal represents my growth from initial challenges (learning VirusTotal) to confident application of security tools and frameworks. Most importantly, I learned that effective incident response isn't just about technical tools - it's about systematic documentation, following established procedures, and maintaining detailed records that support both immediate response and long-term security improvements.
+This journal represents my growth from initial challenges (learning VirusTotal) to application of security tools and frameworks. Most importantly, I learned that effective incident response isn't just about technical tools - it's about systematic documentation, following established procedures, and maintaining detailed records that support both immediate response and long-term security improvements.
