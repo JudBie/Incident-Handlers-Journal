@@ -23,10 +23,8 @@ This journal documents my hands-on experience investigating and responding to va
 ## Journal Entries
 
 ### Entry 1: Ransomware Attack on Healthcare Clinic
-<img width="605" height="466" alt="Screenshot 2025-09-29 at 4 02 10 PM" src="https://github.com/user-attachments/assets/f585b5ae-f30f-4e86-a2e5-aadf97382b33" />
-
-<img width="601" height="214" alt="Screenshot 2025-09-29 at 4 02 28 PM" src="https://github.com/user-attachments/assets/ad6166a3-b2e1-4b00-96b6-58ec86e071a6" />
-
+![Ransomware Healthcare Attack Part 1](images/entry1-ransomware-part1.png)
+![Ransomware Healthcare Attack Part 2](images/entry1-ransomware-part2.png)
 
 **My thought process**: This incident showed me how devastating ransomware attacks can be, especially in healthcare where patient care depends on immediate access to medical records. The financial motivation was clear from the ransom note, and it made me think about what the clinic had already put in place to prevent or mitigate an attack like this.
 
